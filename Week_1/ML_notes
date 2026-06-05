@@ -1,0 +1,230 @@
+What primary learning signal did Samuel’s checkers program use from its games?
+**Game outcomes of wins and losses**
+
+In Samuel's view what distinguishes machine Learning from traditional programming ?
+**Learning without explicit programming**
+
+What did Samuel's checkers program observe about board positions during self-play ?
+Which positions led to wins
+--------------------------------------------------------------------------------------------------------------------
+WHAT IS MACHINE LEARNING
+
+Supervised Machine Learning: Regression and Classification
+ML Applications
+Movie Recommendations
+Instagram Tags
+Healthcare, Products, Factories
+AGI (Artificial General Intelligence)
+Goal: Creating machines with AI / Building AI
+Machine Learning in Industry
+Machine Learning is already creating enormous money in all industries like:
+
+Transport
+Agriculture
+E-commerce
+etc. — yet more to be discovered
+What is Machine Learning?
+"Field of study that gives computers the ability to learn without being explicitly programmed."
+
+Types of Machine Learning
+                  Machine Learning
+                 /                \
+    Reinforcement               Recommendation
+      Learning                    Systems
+                 \                /
+              Supervised       Unsupervised
+              Learning           Learning
+Type	                                 Description
+Supervised Learning              	Learns from labeled data
+Unsupervised Learning	            Finds patterns in unlabeled data
+Reinforcement Learning	            Learns through rewards and penalties
+Recommendation Systems	            Suggests relevant items to users
+
+**Key Takeaway**
+Rapid Advancements used most in real-world applications.
+
+
+----------------------------------------------------------------------------
+
+**SUPERVISED LEARNING** 
+
+what is regression under supervised learning in machine learning?
+
+Regression in Supervised Machine Learning
+Regression is a type of supervised learning where the model predicts a continuous numerical value as output, based on input features.
+
+Key Idea
+The model learns the relationship between input variables (features) and a continuous output variable (label) from labeled training data, then predicts values for new unseen data.
+
+Simple Example
+Predicting house price based on size:
+
+House Size (sq ft)      	Price (₹ lakhs)
+1000	                        40
+1500	                        60
+2000	                        80
+The model learns the pattern → predicts price for any new size input.
+
+Common Regression Algorithms
+Algorithm	                           Use Case
+Linear Regression	             Simple straight-line relationship
+Polynomial Regression	         Curved relationships
+Ridge / Lasso Regression	     When overfitting is a concern
+Decision Tree Regression	     Non-linear data
+Random Forest Regression	     Complex, high-accuracy tasks
+SVR (Support Vector Regression)	 High-dimensional data
+
+Real-World Applications
+
+🏠 House price prediction
+📈 Stock price forecasting
+🌡️ Weather temperature prediction
+🚗 Car price estimation
+💰 Salary prediction based on experience
+🏥 Medical cost estimation
+Regression vs Classification
+
+          Regression	                                        Classification
+Output	   Continuous number (e.g., 85.5)	          Discrete category (e.g., Yes/No)
+Example	   Predict salary	                          Predict if email is spam
+Metrics	   MSE, RMSE, R²	                          Accuracy, Precision, Recall
+
+How it Works (Linear Regression)
+The model fits a best-fit line:
+
+y = mx + b
+y = predicted output
+x = input feature
+m = slope (weight)
+b = intercept (bias)
+The goal is to minimize the error (difference between predicted and actual values) using a method called Gradient Descent.
+
+In short: If your output is a number, use Regression. If it's a category, use Classification.
+
+--------------------------------------------------------------------------------------
+
+**Supervised Learning in Machine Learning**
+Supervised Learning is a type of ML where the model is trained on labeled data — meaning every input has a corresponding correct output (answer).
+
+Simple Analogy
+Think of it like a student learning from a teacher:
+
+Teacher gives questions with answers (labeled data)
+Student studies the pattern
+Student answers new questions on their own (prediction)
+How It Works
+Input Data (X)  →  [ML Model]  →  Predicted Output (Ŷ)
+                        ↑
+              Learns from Labeled
+              Training Data (X, Y)
+
+
+Steps:
+
+Feed the model labeled training data (input + correct output)
+Model learns the mapping function: Y = f(X)
+Model is tested on new unseen data
+Model predicts the output
+
+![alt text](image-2.png)
+
+Two Types of Supervised Learning
+1. 🔢 Regression
+Output is a continuous number
+Example: Predicting salary = ₹45,000
+2. 🏷️ Classification
+Output is a category/label
+Example: Email → "Spam" or "Not Spam"
+
+![alt text](image.png)
+
+
+![alt text](image-1.png)
+
+
+what is unsupervised learning in machine learning ?
+
+Unsupervised Learning in Machine Learning
+Unsupervised Learning is a type of ML where the model is trained on unlabeled data — meaning there are no correct answers given. The model finds hidden patterns and structures on its own.
+
+Simple Analogy
+Think of it like a student exploring a library with no teacher:
+
+No one tells them how to categorize books
+
+They group books themselves by noticing similarities (genre, size, topic)
+
+They discover patterns on their own
+
+How It Works
+Input Data (X)  →  [ML Model]  →  Patterns / Groups / Structure
+(No Labels!)            ↑
+                Finds hidden
+                patterns itself
+Steps:
+
+Feed the model only input data (no output labels)
+Model explores the data and finds natural structure
+Model groups or represents data in a meaningful way
+Insights are used for decision making
+
+Types of Unsupervised Learning
+1. 🗂️ Clustering
+Groups similar data points together
+Model decides the groups on its own
+
+Algorithm	                                       Description
+K-Means	                                       Divides data into K clusters
+Hierarchical Clustering	                       Builds a tree of clusters
+DBSCAN	                                       Groups based on density
+
+Example: Grouping customers by shopping behavior (Budget shoppers, Premium shoppers, Occasional shoppers)
+
+2. 📉 Dimensionality Reduction
+Reduces the number of features while keeping important information
+Simplifies complex data
+
+Algorithm	                                      Description
+PCA (Principal Component Analysis)	           Compresses features
+t-SNE	                                       Visualizes high-dimensional data
+Autoencoders	                               Neural network-based compression
+
+Example: Compressing a 100-feature dataset into 5 key features
+
+3. 🔗 Association Rule Learning
+Finds rules about which items appear together
+Used in market basket analysis
+
+Algorithm	                                      Description
+Apriori	                                      Finds frequent itemsets
+FP-Growth	                                  Faster frequent pattern mining
+
+Example: "Customers who buy bread also buy butter" → Supermarket shelf placement
+
+Real-World Applications
+Application	Type
+🛍️ Customer segmentation	Clustering
+🎵 Spotify music grouping	Clustering
+🖼️ Image compression	Dimensionality Reduction
+🛒 Amazon "Frequently bought together"	Association
+🔍 Anomaly / Fraud detection	Clustering
+🧬 Gene expression analysis	Dimensionality Reduction
+📰 News topic grouping	Clustering
+
+Supervised vs Unsupervised
+                        Supervised	                                     Unsupervised
+Data	             Labeled (X + Y)	                               Unlabeled (X only)
+Goal	             Predict output                                	   Find hidden patterns
+Human involvement	 High (labeling needed)	                           Low
+Output	             Prediction	                                       Clusters / Structure
+Example	             Spam detection	                                   Customer grouping
+Difficulty	         Easier to evaluate	                               Harder to evaluate
+
+Advantages & Disadvantages
+✅ Advantages	                      ❌ Disadvantages
+No need for labeled data	        Hard to evaluate accuracy
+Discovers hidden patterns	        Results can be subjective
+Works on large raw datasets   	    Clusters may be hard to interpret
+Less human effort needed	        Sensitive to bad/noisy data
+
+In short: Unsupervised Learning = Learning without a teacher, finding hidden patterns in raw data on its own. It's powerful when you have lots of data but no labels — like grouping millions of customers without knowing their categories in advance.
